@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reviews</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="EPAM project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <link rel="stylesheet" type="text/css" href="styles/reviews_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/reviews_responsive.css">
+</head>
+<body>
+<div class="super_container">
+    <!--Header-->
+    <header class="clearfix">
+        <div class="container">
+            <div class="header-container trans-400">
+                <!--Logo-->
+                <div class="logo-container">
+                    <div class="logo">
+                        <div>Carpe Diem</div>
+                        <div>travel agency</div>
+                        <div class="logo-img trans-400">
+                            <img alt="logo" src="images/logo.png">
+                        </div>
+                    </div>
+                </div>
+                <a href="#main-menu"
+                   class="menu-toggle"
+                   role="button"
+                   id="main-menu-toggle"
+                   aria-expanded="false"
+                   aria-controls="main-menu"
+                   aria-label="Open menu">
+                    <span class="sr-only">Open menu</span>
+                    <div class="hamburger">
+                        <span class="fa fa-bars" aria-hidden="true"></span>
+                    </div>
+                </a>
+                <!--Navigation-->
+                <nav id="main-menu"
+                     class="main-menu"
+                     role="navigation"
+                     aria-expanded="false"
+                     aria-label="Main menu">
+                    <a href="#main-menu-toggle"
+                       class="menu-close"
+                       role="button"
+                       id="main-menu-close"
+                       aria-expanded="false"
+                       aria-controls="main-menu"
+                       aria-label="Close menu">
+                        <span class="sr-only">Close menu</span>
+                        <span class="fa fa-close" aria-hidden="true"></span>
+                    </a>
+                    <ul class="main-menu-list">
+                        <li class="main-menu-item"><a href="index.html">Home</a></li>
+                        <li class="main-menu-item"><a href="about.html">About us</a></li>
+                        <li class="main-menu-item"><a href="offers.html">Offers</a></li>
+                        <li class="main-menu-item"><a href="news.html">News</a></li>
+                        <li class="main-menu-item"><a href="contacts.html">Contact</a></li>
+                        <li class="main-menu-item active"><a href="review.html">Reviews</a></li>
+                    </ul>
+                </nav>
+                <a href="#main-menu-toggle"
+                   class="backdrop"
+                   tabindex="-1"
+                   aria-hidden="true"
+                   hidden></a>
+            </div>
+        </div>
+    </header>
+    <!--Home block-->
+    <section class="home clearfix">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-title">Reviews</div>
+                <div class="home-breadcrumbs">
+                    <ul class="home-breadcrumbs-list">
+                        <li class="home-breadcrumb">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="home-breadcrumb">Reviews</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Search block-->
+    <section class="search overlay parallax-background clearfix" data-parallax="scroll" data-image-src="images/search.png" data-speed="0.6">
+        <div class="container">
+            <h3 class="container-top-title">Find the adventure of a lifetime</h3>
+            <div class="search-form-container">
+                <form class="search-form" action="#">
+                    <div class="search-item">
+                        <label for="destination">Destination:</label>
+                        <input type="text" class="destination search-input" id="destination" placeholder="Keyword here" required>
+                    </div>
+                    <div class="search-item">
+                        <label for="trip-type">Trip type:</label>
+                        <select class="item-select search-input" id="trip-type" name="trip-type" required>
+                            <option>Single</option>
+                            <option>Double</option>
+                            <option selected>Family</option>
+                        </select>
+                    </div>
+                    <div class="search-item">
+                        <label for="min-price">Min price:</label>
+                        <input type="number" value="200" min="50" step="10" class="number-select search-input" id="min-price">
+                    </div>
+                    <div class="search-item">
+                        <label for="max-price">Max price:</label>
+                        <input type="number" value="1000" min="50" step="10" class="number-select search-input" id="max-price">
+                    </div>
+                    <div class="search-item">
+                        <button class="button search-button">Find!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Reviews block-->
+    <section class="reviews clearfix">
+        <div class="container">
+            <div class="reviews-content">
+                <div class="reviews-posts">
+                    <div class="reviews-post">
+                        <div class="post-title">
+                            <blockquote>
+                                <p>Overall, fantastic! I'd recommend them to anyone looking for a creative, thoughtful, and professional team.”</p>
+                            </blockquote>
+                        </div>
+                        <div class="post-text">
+                            <p>Our travel agency provided outstanding advice and direction in helping us develop our plans for travel in Austria, Czech Republic, and elsewhere in Bavaria.
+                                There selection of local guides and accommodations was a real "difference maker" in making this travel experience as special as it was. </p>
+                            <div class="item-more"><a href="#">Read More</a></div>
+                        </div>
+                        <div class="post-image">
+                            <img src="images/reviews-1.png" alt="User image">
+                        </div>
+                        <div class="post-meta">
+                            <ul>
+                                <li><a href="#">by Lucy Ming</a></li>
+                                <li>december 26, 2018</li>
+                                <li><a href="#">5 comments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="reviews-post">
+                        <div class="post-title">
+                            <blockquote>
+                                <p>4 thumbs way up from my 2 sons!”</p>
+                            </blockquote>
+                        </div>
+                        <div class="post-text">
+                            <p>Our travel agent exceeded expectations with respect to our recent trip to New Zealand. All lodging accomodations were outstanding - a nice mix of 5 star hotels with
+                                "motels" with eat-in kitchens, all within budget.  Locations of the lodging were right on target - typically within walking distances of restaurants and other fun activities.
+                                Excursions booked by our agent were also very interesting and fun, based on a general interest expressed in areas such as hiking, sightseeing, etc. I was surprised by professionalism
+                                and great customer service the excursion operators demonstrated.</p>
+                            <div class="item-more"><a href="#">Read More</a></div>
+                        </div>
+                        <div class="post-image">
+                            <img src="images/reviews-2.png" alt="User image">
+                        </div>
+                        <div class="post-meta">
+                            <ul>
+                                <li><a href="#">by Arthur Kilian</a></li>
+                                <li>december 15, 2018</li>
+                                <li><a href="#">3 comments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="reviews-post">
+                        <div class="post-title">
+                            <blockquote>
+                                <p>Everything we wanted and more.”</p>
+                            </blockquote>
+                        </div>
+                        <div class="post-text">
+                            <p>We cannot recommend this travel company enough! My husband and I had been wanting to go to Germany/Austria for quite some time but had not done so due to lack of time to plan
+                                a worthwhile trip. Booking with this company was exactly what we needed--we told them the types of places and sites we wanted to see and they took care of the rest. Our travel agents
+                                and the rest of the travel company were simply amazing throughout the whole process. We felt that we got a truly unique and very low stress traveling experience by booking through
+                                this company.</p>
+                            <div class="item-more"><a href="#">Read More</a></div>
+                        </div>
+                        <div class="post-image">
+                            <img src="images/reviews-3.png" alt="User image">
+                        </div>
+                        <div class="post-meta">
+                            <ul>
+                                <li><a href="#">by Martina Bells</a></li>
+                                <li>december 08, 2018</li>
+                                <li><a href="#">7 comments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="pages">
+                    <ul class="pages-list">
+                        <li class="page active">
+                            <a href="#">01.</a>
+                        </li>
+                        <li class="page">
+                            <a href="#">02.</a>
+                        </li>
+                        <li class="page">
+                            <a href="#">03.</a>
+                        </li>
+                        <li class="page">
+                            <a href="#">04.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Sidebar-->
+            <div class="sidebar">
+                <!--Sidebar featured posts-->
+                <div class="sidebar-comment">
+                    <div class="sidebar-comment-title">Tell us what you think!</div>
+                    <div class="sidebar-comment-text">
+                        <p>We are constantly working to raise the bar on our services. If you have any questions or concerns about your experience, please let us know. Our support concierges are available 24/7.</p>
+                    </div>
+                    <div class="sidebar-comment-info">
+                        <ul>
+                            <li>Mary Jane</li>
+                            <li>+12 345 6789 12345</li>
+                            <li>randomMail@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-comment-info">
+                        <ul>
+                            <li>Trevor Rownie</li>
+                            <li>+12 345 6789 12345</li>
+                            <li>randomMail@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-comment-info">
+                        <ul>
+                            <li>Joseph Macmillan</li>
+                            <li>+12 345 6789 12345</li>
+                            <li>randomMail@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Subscription block-->
+    <section class="subscription overlay parallax-background clearfix" data-parallax="scroll" data-image-src="images/subscribe.png" data-speed="0.6">
+        <div class="container">
+            <h3 class="container-top-title">Subscribe to our Newsletter</h3>
+            <div class="subscription-form-container">
+                <form class="subscription-form" action="#">
+                    <div class="subscription-item">
+                        <input type="email" id="subscription-email" class="subscription-email" placeholder="Your E-mail Address">
+                        <button type="submit" id="subscription-button" class="subscription-button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="clearfix">
+        <div class="container">
+            <div class="footer-about col-num3">
+                <div class="logo-container">
+                    <div class="logo">
+                        <div>Carpe Diem</div>
+                        <div>travel agency</div>
+                        <div class="logo-img"><img src="images/logo.png" alt="logo"></div>
+                    </div>
+                </div>
+                <div class="footer-description">Carpe Diem has been in business as a full service travel agency since 2005. The staff is renowned for providing personalized service for all
+                    your corporate and leisure travel needs including group travel, vacations & cruises, honeymoons, and destination weddings.</div>
+                <div class="copyright">Copyright &copy;2019. All rights reserved.</div>
+            </div>
+            <div class="footer-news col-num3">
+                <div class="footer-title">Latest News</div>
+                <div class="footer-news-content">
+                    <div class="footer-news-item">
+                        <div class="footer-news-image"><img src="images/news-1.png" alt="news"></div>
+                        <div class="footer-news-item-content">
+                            <div class="footer-news-item-title"><a href="news.html">Pros of winter travelling</a></div>
+                            <div class="footer-news-item-date">Dec 25, 2018</div>
+                        </div>
+                    </div>
+                    <div class="footer-news-item">
+                        <div class="footer-news-image"><img src="images/news-2.png" alt="news"></div>
+                        <div class="footer-news-item-content">
+                            <div class="footer-news-item-title"><a href="news.html">A perfect vacation: how to unite with the nature</a></div>
+                            <div class="footer-news-item-date">Dec 09, 2018</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-social col-num3">
+                <div class="footer-title">Join us!</div>
+                <div class="footer-description">We are constantly working to raise the bar on our services. If you have any questions or concerns about your experience, please let us know.</div>
+                <ul class="footer-social-list">
+                    <li class="footer-social-item">
+                        <a href="#">
+                            <span class="fa fa-instagram" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="#">
+                            <span class="fa fa-facebook" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="#">
+                            <span class="fa fa-twitter" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/parallax.min.js"></script>
+</body>
+</html>

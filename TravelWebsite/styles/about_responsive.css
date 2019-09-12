@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+@media only screen and (max-width: 991px)
+{
+	.milestones,
+	.services {
+		padding-bottom: 30px;
+	}
+	.milestones-container {
+		margin: 30px 0;
+	}
+	.milestone-counter
+	{
+		margin-top: 23px;
+	}
+	.icon-box:not(:last-child)
+	{
+		margin-bottom: 40px;
+	}
+	.icon-box-title
+	{
+		font-size: 22px;
+	}
+	.icon-box-more {
+		margin-top: 15px;
+	}
+}
+
+@media only screen and (max-width: 575px)
+{
+	p{font-size:13px;}
+
+	.home-title
+	{
+		font-size: 24px;
+	}
+	.home-breadcrumb,
+	.home-breadcrumb a
+	{
+		font-size: 16px;
+	}
+	.milestones-container {
+		padding-left: 10%;
+	}
+	.milestones-description,
+	.services-content {
+		margin-top: 30px;
+	}
+	.milestone {
+		max-width: 100%;
+		margin-bottom: 40px;
+	}
+
+}

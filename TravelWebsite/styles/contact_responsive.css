@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+@media only screen and (max-width: 991px)
+{
+	.container-title {
+		padding-top: 45px;
+	}
+	.contact-content {
+		margin-top: 30px;
+	}
+	.contact-form-container
+	{
+		margin-top: 10px;
+	}
+	.slim-column,
+	.wide-column {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 575px)
+{
+	p{font-size:12px;}
+	.home-title
+	{
+		font-size: 24px;
+	}
+	.home-breadcrumb,
+	.home-breadcrumb a
+	{
+		font-size: 16px;
+	}
+
+	.button
+	{
+		width: 121px;
+		height: 40px;
+	}
+	.button a
+	{
+		font-size: 12px;
+		line-height: 40px;
+	}
+	.contact_title
+	{
+		font-size: 24px;
+	}
+	.contact_subtitle
+	{
+		font-size: 12px;
+	}
+}

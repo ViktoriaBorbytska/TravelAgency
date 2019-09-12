@@ -1,0 +1,234 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+
+.home {
+    background: url('../images/reviews-home.png') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 63vh;
+}
+
+.home-content {
+    margin-top: 37vh;
+    width: 100%;
+    text-align: left;
+}
+
+.home-title {
+    font-size: 48px;
+    font-weight: 200;
+    color: #FFFFFF;
+}
+
+.home-breadcrumb {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+.home-breadcrumb a {
+    font-size: 18px;
+    font-weight: 200;
+    color: #FFFFFF;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.home-breadcrumb a:hover {
+    color: #D67F1E;
+}
+
+.home-breadcrumb:not(:last-child)::after {
+    content: '/';
+    margin-left: 3px;
+}
+
+.reviews
+{
+	padding-top: 82px;
+	padding-bottom: 120px;
+}
+.reviews-content {
+    width: 70%;
+    float: left;
+}
+.reviews-post
+{
+	width: 100%;
+	margin-bottom: 59px;
+}
+.reviews-post:last-child
+{
+	margin-bottom: 0;
+}
+
+blockquote p {
+	color: #131a2f;
+	box-sizing: border-box;
+	line-height: 1.4 !important;
+	text-shadow: 0 1px #7d8293;
+	font-style: italic;
+	font-size: 34px;
+	font-weight: 300;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+blockquote p:first-child:before {
+	content: '\201C';
+	color: #D67F1E;
+	font-size: 7.5em;
+	font-weight: 700;
+	opacity: .3;
+	position: absolute;
+	top: -.4em;
+	left: -.2em;
+	text-shadow: none;
+	z-index: -300;
+}
+
+.item-more
+{
+	margin-top: 10px;
+}
+.item-more a
+{
+	font-size: 12px;
+	color: #131a2f;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.item-more a:hover
+{
+	color: #D67F1E;
+}
+.post-meta
+{
+	margin-top: 12px;
+}
+.post-meta ul li
+{
+	display: inline-block;
+	position: relative;
+	font-size: 12px;
+	font-weight: 600;
+	color: #7d8293;
+	text-transform: uppercase;
+	padding-right: 26px;
+}
+.post-meta ul li::after
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 10px;
+	content: '|';
+}
+.post-meta ul li:last-child::after
+{
+	display: none;
+}
+.post-meta ul li a
+{
+	font-size: 12px;
+	font-weight: 600;
+	color: #7d8293;
+	text-transform: uppercase;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.post-meta ul li a:hover
+{
+	color: #D67F1E;
+}
+.post-image
+{
+	margin-top: 20px;
+}
+.post-image img
+{
+	max-width: 100%;
+}
+
+.post-text
+{
+	margin-top: 20px;
+}
+.post-text p:last-of-type
+{
+	margin-bottom: 0;
+}
+
+.sidebar
+{
+	width: 30%;
+    float: right;
+    padding-left: 25px;
+}
+
+.sidebar-comment
+{
+	margin-top: 13px;
+}
+
+.sidebar-comment-title
+{
+	font-size: 20px;
+	font-weight: 400;
+	color: #131a2f;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.sidebar-comment-text {
+	margin-top: 13px;
+}
+.sidebar-comment-text {
+	font-size: 14px;
+}
+.sidebar-comment-info {
+	margin-top: 13px;
+}
+.sidebar-comment-info ul li
+{
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+.sidebar-comment-info ul li:first-child
+{
+	list-style-image: url("../images/list-icon.png");
+	list-style-position: outside;
+	font-weight: 600;
+}
+.pages
+{
+	margin-top: 49px;
+	float: left;
+}
+.page
+{
+	display: inline-block;
+}
+.page a
+{
+	font-size: 15px;
+	font-weight: 400;
+	color: #131a2f;
+}
+.page.active a
+{
+	color: #D67F1E;
+}
+
+.page a:hover {
+	color: #878c9b;
+}

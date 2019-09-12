@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Offers</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="EPAM project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <link rel="stylesheet" type="text/css" href="styles/offers_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/offers_responsive.css">
+</head>
+<body>
+<div class="super-container">
+    <!--Header-->
+    <header class="clearfix">
+        <div class="container">
+            <div class="header-container trans-400">
+                <!--Logo-->
+                <div class="logo-container">
+                    <div class="logo">
+                        <div>Carpe Diem</div>
+                        <div>travel agency</div>
+                        <div class="logo-img trans-400">
+                            <img alt="logo" src="images/logo.png">
+                        </div>
+                    </div>
+                </div>
+                <a href="#main-menu"
+                   class="menu-toggle"
+                   role="button"
+                   id="main-menu-toggle"
+                   aria-expanded="false"
+                   aria-controls="main-menu"
+                   aria-label="Open menu">
+                    <span class="sr-only">Open menu</span>
+                    <div class="hamburger">
+                        <span class="fa fa-bars" aria-hidden="true"></span>
+                    </div>
+                </a>
+                <!--Navigation-->
+                <nav id="main-menu"
+                     class="main-menu"
+                     role="navigation"
+                     aria-expanded="false"
+                     aria-label="Main menu">
+                    <a href="#main-menu-toggle"
+                       class="menu-close"
+                       role="button"
+                       id="main-menu-close"
+                       aria-expanded="false"
+                       aria-controls="main-menu"
+                       aria-label="Close menu">
+                        <span class="sr-only">Close menu</span>
+                        <span class="fa fa-close" aria-hidden="true"></span>
+                    </a>
+                    <ul class="main-menu-list">
+                        <li class="main-menu-item"><a href="index.html">Home</a></li>
+                        <li class="main-menu-item"><a href="about.html">About us</a></li>
+                        <li class="main-menu-item active"><a href="#">Offers</a></li>
+                        <li class="main-menu-item"><a href="news.html">News</a></li>
+                        <li class="main-menu-item"><a href="contacts.html">Contact</a></li>
+                        <li class="main-menu-item"><a href="review.html">Reviews</a></li>
+                    </ul>
+                </nav>
+                <a href="#main-menu-toggle"
+                   class="backdrop"
+                   tabindex="-1"
+                   aria-hidden="true"
+                   hidden></a>
+            </div>
+        </div>
+    </header>
+    <!--Home block-->
+    <section class="home clearfix">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-title">Offers</div>
+                <div class="home-breadcrumbs">
+                    <ul class="home-breadcrumbs-list">
+                        <li class="home-breadcrumb">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="home-breadcrumb">Offers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Search block-->
+    <section class="search overlay parallax-background clearfix" data-parallax="scroll" data-image-src="images/search.png" data-speed="0.6">
+        <div class="container">
+            <h3 class="container-top-title">Find the adventure of a lifetime</h3>
+            <div class="search-form-container">
+                <form class="search-form" action="#">
+                    <div class="search-item">
+                        <label for="destination">Destination:</label>
+                        <input type="text" class="destination search-input" id="destination" placeholder="Keyword here" required>
+                    </div>
+                    <div class="search-item">
+                        <label for="trip-type">Trip type:</label>
+                        <select class="item-select search-input" id="trip-type" name="trip-type" required>
+                            <option>Single</option>
+                            <option>Double</option>
+                            <option selected>Family</option>
+                        </select>
+                    </div>
+                    <div class="search-item">
+                        <label for="min-price">Min price:</label>
+                        <input type="number" value="200" min="50" step="10" class="number-select search-input" id="min-price">
+                    </div>
+                    <div class="search-item">
+                        <label for="max-price">Max price:</label>
+                        <input type="number" value="1000" min="50" step="10" class="number-select search-input" id="max-price">
+                    </div>
+                    <div class="search-item">
+                        <button class="button search-button">Find!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Offers block-->
+    <section class="offers clearfix">
+        <div class="container">
+            <div class="container-title">
+                <h2>Choose your destination</h2>
+                <span class="title-comment">Take a look at this offers</span>
+            </div>
+            <div class="filters clearfix">
+                <div class="filters-container">
+                    <div class="filters-group-1">
+                        <ul class="sorting">
+                            <li>
+                                <span class="sorting-description">Filter by</span>
+                                <i class="fa fa-angle-down"></i>
+                                <ul>
+                                    <li class="sorting-item" data-isotope-option='{ "sortBy": "original-order" }'>
+                                        <span>Default</span>
+                                    </li>
+                                    <li class="sorting-item" data-isotope-option='{ "sortBy": "name" }'>
+                                        <span>Name</span>
+                                    </li>
+                                    <li class="sorting-item" data-isotope-option='{ "sortBy": "price" }'>
+                                        <span>Price</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="sorting-description">Stars</span>
+                                <span class="fa fa-angle-down"></span>
+                                <ul>
+                                    <li class="filter-item" data-filter="*"><span>Show All</span></li>
+                                    <li class="sorting-item" data-isotope-option='{ "sortBy": "stars" }'>
+                                        <span>Ascending</span>
+                                    </li>
+                                    <li class="filter-item" data-filter=".rating_1">
+                                        <span>1</span>
+                                    </li>
+                                    <li class="filter-item" data-filter=".rating_2">
+                                        <span>2</span>
+                                    </li>
+                                    <li class="filter-item" data-filter=".rating_3">
+                                        <span>3</span>
+                                    </li>
+                                    <li class="filter-item" data-filter=".rating_4">
+                                        <span>4</span>
+                                    </li>
+                                    <li class="filter-item" data-filter=".rating_5">
+                                        <span>5</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="sorting-description">Price</span>
+                                <i class="fa fa-angle-down"></i>
+                                <ul>
+                                    <li class="sorting-item" data-isotope-option='{ "sortBy": "original-order" }'>
+                                        <span>Default</span>
+                                    </li>
+                                    <li class="sorting-item" data-isotope-option='{ "sortBy": "price" }'>
+                                        <span>Price</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filters-group-2">
+                        <div class="sorting-icons">
+                            <div class="detailed-view">
+                                <span class="fa fa-bars" aria-hidden="true"></span>
+                            </div>
+                            <div class="box-view">
+                                <span class="fa fa-th-large" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offers-content">
+                <div class="offers-item">
+                    <div class="item-image">
+                        <img class="top-image" src="images/top-1.png" alt="Paris">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-price">From $600</div>
+                        <div class="item-title">Paris, France</div>
+                        <ul>
+                            <li>1 person</li>
+                            <li>4 nights</li>
+                            <li>3 star hotel</li>
+                        </ul>
+                        <div class="rating rating_4" data-rating="4">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div class="item-text">This dynamic destination is the very definition of world-class! You simply can't visit without seeing Eiffel Tower and Palace of Versailles.
+                            It is also famous for the Arc de Triomphe and the Louvre Museum. Escape the ordinary and throw yourself into a realm of imagination at Disneyland® Paris and Aquaboulevard.
+                            If you're looking for even more family fun, head on to the La Geode and the Montmartre Funicular.</div>
+                        <div class="item-more"><a href="#">Read More</a></div>
+                    </div>
+                </div>
+                <div class="offers-item">
+                    <div class="item-image"><img src="images/top-2.png" alt="Rome"></div>
+                    <div class="item-content">
+                        <div class="item-price">From $500</div>
+                        <div class="item-title">Rome, Italy</div>
+                        <ul>
+                            <li>1 person</li>
+                            <li>3 nights</li>
+                            <li>4 star hotel</li>
+                        </ul>
+                        <div class="rating rating_5" data-rating="5">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div class="item-text">Start off your trip at the iconic St. Peter's Basilica and Roman Forum. Escape the adult world for a while and throw yourself into a place of imagination and
+                            wonder at Rainbow MagicLand and Zoomarine. If you're on the lookout for even more family fun, head onwards to the Explora Children's Museum and Hydromania. Your family doesn't need
+                            to have gills and scales in order to enjoy the deep waters at Mediterraneum Aquarium Rome.</div>
+                        <div class="item-more"><a href="#">Read More</a></div>
+                    </div>
+                </div>
+                <div class="offers-item">
+                    <div class="item-image"><img src="images/top-3.png" alt="London""></div>
+                    <div class="item-content">
+                        <div class="item-price">From $800</div>
+                        <div class="item-title">London, Great Britain</div>
+                        <ul>
+                            <li>1 person</li>
+                            <li>3 nights</li>
+                            <li>3 star hotel</li>
+                        </ul>
+                        <div class="rating rating_3" data-rating="3">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div class="item-text">Dynamic and international, London is famous for the Big Ben and Buckingham Palace. Royal Albert Hall and Trafalgar Square are also iconic sights here.
+                            Rediscover the joys of childhood at the Coca-Cola London Eye and Chessington World of Adventures. Want more? The Madame Tussaud's Wax Museum and the Electric Cinema are sure
+                            to keep everyone grinning. Sea Life London Aquarium and Horniman Museum Aquarium offer guests an opportunity to see the wonderful world of underwater creatures.</div>
+                        <div class="item-more"><a href="#">Read More</a></div>
+                    </div>
+                </div>
+                <div class="offers-item">
+                    <div class="item-image"><img src="images/top-4.png" alt="Florence"></div>
+                    <div class="item-content">
+                        <div class="item-price">From $300</div>
+                        <div class="item-title">Florence, Italy</div>
+                        <ul>
+                            <li>1 person</li>
+                            <li>5 nights</li>
+                            <li>4 star hotel</li>
+                        </ul>
+                        <div class="rating rating_5" data-rating="5">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div class="item-text">Cradle of the Renaissance, La Cittá Bella: Florence is known as many things, but it’s never been known as boring. Perched in the heart of Italy, this
+                            Tuscan capital blends historically important sights with an effortlessly modern style, and the range of Florence activities is a testament to its vibrant personality.
+                            Whether you’re interested in strolling the stylish streets or want to join one of the guided Florence tours, this is a city that belongs on your must-travel map.</div>
+                        <div class="item-more"><a href="#">Read More</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pages">
+                <ul class="pages-list">
+                    <li class="page active">
+                        <a href="#">01.</a>
+                    </li>
+                    <li class="page">
+                        <a href="#">02.</a>
+                    </li>
+                    <li class="page">
+                        <a href="#">03.</a>
+                    </li>
+                    <li class="page">
+                        <a href="#">04.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--Subscription block-->
+    <section class="subscription overlay parallax-background clearfix" data-parallax="scroll" data-image-src="images/subscribe.png" data-speed="0.6">
+        <div class="container">
+            <h3 class="container-top-title">Subscribe to our Newsletter</h3>
+            <div class="subscription-form-container">
+                <form class="subscription-form" action="#">
+                    <div class="subscription-item">
+                        <input type="email" id="subscription-email" class="subscription-email" placeholder="Your E-mail Address">
+                        <button type="submit" id="subscription-button" class="subscription-button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="clearfix">
+        <div class="container">
+            <div class="footer-about col-num3">
+                <div class="logo-container">
+                    <div class="logo">
+                        <div>Carpe Diem</div>
+                        <div>travel agency</div>
+                        <div class="logo-img"><img src="images/logo.png" alt="logo"></div>
+                    </div>
+                </div>
+                <div class="footer-description">Carpe Diem has been in business as a full service travel agency since 2005. The staff is renowned for providing personalized service for all
+                    your corporate and leisure travel needs including group travel, vacations & cruises, honeymoons, and destination weddings.</div>
+                <div class="copyright">Copyright &copy;2019. All rights reserved.</div>
+            </div>
+            <div class="footer-news col-num3">
+                <div class="footer-title">Latest News</div>
+                <div class="footer-news-content">
+                    <div class="footer-news-item">
+                        <div class="footer-news-image"><img src="images/news-1.png" alt="news"></div>
+                        <div class="footer-news-item-content">
+                            <div class="footer-news-item-title"><a href="news.html">Pros of winter travelling</a></div>
+                            <div class="footer-news-item-date">Dec 25, 2018</div>
+                        </div>
+                    </div>
+                    <div class="footer-news-item">
+                        <div class="footer-news-image"><img src="images/news-2.png" alt="news"></div>
+                        <div class="footer-news-item-content">
+                            <div class="footer-news-item-title"><a href="news.html">A perfect vacation: how to unite with the nature</a></div>
+                            <div class="footer-news-item-date">Dec 09, 2018</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-social col-num3">
+                <div class="footer-title">Join us!</div>
+                <div class="footer-description">We are constantly working to raise the bar on our services. If you have any questions or concerns about your experience, please let us know.</div>
+                <ul class="footer-social-list">
+                    <li class="footer-social-item">
+                        <a href="#">
+                            <span class="fa fa-instagram" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="#">
+                            <span class="fa fa-facebook" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="#">
+                            <span class="fa fa-twitter" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/parallax.min.js"></script>
+</body>
+</html>
